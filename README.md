@@ -37,4 +37,20 @@ Create admin password for grafana on first connect (default admin:admin)
 
 * reach on port localhost:21883
 
+## Some Queries
+
+export data to csv with commandline client
+
+`influx -host localhost -port 28086 -database iotwind -format csv -execute 'SELECT * from iotwind' > "/tmp/influxdataexport.$(date -I).csv"`
+
+`influx -host localhost -port 28086 -database iotwind -execute "SELECT * FROM iotwind where deviceid='a3d01'"`
+
+some more simple queries
+
+    SHOW TAG VALUES ON "iotwind" FROM "iotwind" WITH KEY = "campaign"
+    SELECT * FROM "iotwind"  
+    SELECT * FROM "iotwind" WHERE "deviceid"='a3d01'
+    SELECT * FROM "iotwind" WHERE "deviceid"='a3d02'
+    SELECT * FROM "iotwind" WHERE "campaign"='NoNameKampagne'
+
 
