@@ -53,4 +53,4 @@ some more simple queries
     SELECT * FROM "iotwind" WHERE "deviceid"='a3d02'
     SELECT * FROM "iotwind" WHERE "campaign"='NoNameKampagne'
 
-
+The script influx2db.sh dumps all data into a csv.gz (gzipped CSV)
