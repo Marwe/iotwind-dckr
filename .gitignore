@@ -1,0 +1,6 @@
+.RData
+.Rhistory
+*.md.*
+get-docker.sh
+windrose_plots.pdf
+
