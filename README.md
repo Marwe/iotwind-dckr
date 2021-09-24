@@ -54,3 +54,10 @@ some more simple queries
     SELECT * FROM "iotwind" WHERE "campaign"='NoNameKampagne'
 
 The script influx2db.sh dumps all data into a csv.gz (gzipped CSV)
+
+# Pi installation
+
+
+docker-compose -f docker-compose-pi4.yaml up
+* https://github.com/influxdata/influxdb/issues/10288
+
